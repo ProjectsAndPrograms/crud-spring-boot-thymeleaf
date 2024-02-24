@@ -8,7 +8,7 @@
   3. Spring data jpa
   4. Spring mvc
   5. MySQL database
-  6. Developed in Eclipse EE
+  6. Developed in SpringToolSuite4 (STS) IDE
   
 ## Screenshots
 
@@ -33,27 +33,69 @@
 ## HOW TO USE?
 
 
- Step-1: 
- Step-2: 
- Step-3: 
- Step-4: 
+ Step-1: Fistly you need to set-up your database. Make sure you have MySQL installed in your PC. 
+ <br> Database Setup : to setup your database you can use the file database/boot_crud_db.sql. using phpmyadmin = if you are using php myadmin then simpley create a new database with the name of 'chat' and then you can import file database/boot_crud_db.sql from your import tab.
 
-Installation
+ using mysql command line client OR workbench - 
+  you can simple run the given queries to create your database setup: 
+    
+  creating a database :
+    
+```sql
+CREATE DATABASE boot_crud_db;
+```
 
-    Clone the Repo:
-    > git clone https://github.com/ProjectsAndPrograms/Ideas.git
-    > cd Ideas
-    > composer install or composer update
-    > cp .env.example .env
-    > Set up .env file
-    > php artisan key:generate
-    > php artisan storage:link
-    > php artisan migrate:fresh --seed
-    > php artisan serve
-    http://127.0.0.1:8000/
+  using the database :
 
-<br>
-setup your .env file correctly it contains database credentials
+```sql
+USE boot_crud_db;
+```
+
+  creating database table :
+
+```sql
+CREATE TABLE `users` (
+  `id` bigint(20) NOT NULL,
+  `dob` date DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `image` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+```
+
+  add primary key and other constraints :
+
+```sql
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `UK6dotkott2kjsp8vw4d0m25fb7` (`email`);
+```
+  set the unique id to handle big requests as well:
+
+```sql
+ALTER TABLE `users`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+COMMIT;
+```
+dummy data:
+
+```sql
+INSERT INTO `users` (`id`, `dob`, `email`, `name`, `password`, `image`) VALUES
+(20, '2024-02-23', 'raj@gmail.com', 'Raj kumar', '$2a$10$NI5IFvnLxpXlkjSplgsB2e2bOjHkEHtCZ7kfVzdRDPTVpJk9WH.Iu', 'cfb47473-369c-4be9-b3d0-a2bdbcdcfe38.jpg'),
+(21, '2024-01-31', 'mysql@gmail.com', 'SpaceX', '$2a$10$9Oal.rc7J/0qewwsPbFOIuNgjTNGMRE2Zh1nxmY0CRTsiEK1IFRFO', 'adefefb9-b7c6-43d6-a661-c4a1ae42cc53.png');
+```
+
+ Step-2: open your STS IDE import this project as an existing maven project <br>
+        <i>file->import->existing maven project-> choose project folder and hit enter</i><br><br>
+        This will open that project in your ide
+ Step-3: To run this application firstly you need to update your build and update your newly opened maven project.<br>
+        To do this right click on your project -> build project <br>
+        after this in order to update your maven project, again<i> right click on your project-> maven -> update project</i>
+ Step-4: Now you are ready to run this crud-application <br>
+<i>right click on java class -> src/main/java/com/crudapp/SpringBootCrudApplication.java  ->Run As -> Spring boot application</i> <br>
+It will take few seconds to launch the applications. after launching you can browser this url [ [http://localhost:8080](http://localhost:8080)] on your browser to show application  
+
 
 
 ## Contributing
