@@ -1,6 +1,12 @@
 ## crud-spring-boot-thymeleaf
- Simple crud application to perform basic tasks, that we have to know while learning spring boot.
+ Simple crud application to perform basic tasks, that we have to know while learning spring boot.Best practice for beginners.
 
+## Features
+  1. Image Uplaod
+  2. Password encoder
+  3. Pagination links
+  4. Flash messages
+  5. Error pages to handle error code such as 404, 500 etc.
 
 ## Technolgies Used 
   1. Spring-boot 3.0.0
