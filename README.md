@@ -1,55 +1,42 @@
-## Ideas
- Ideas an social media website, where users can share their ideas to everyone.
+## crud-spring-boot-thymeleaf
+ Simple crud application to perform basic tasks, that we have to know while learning spring boot.
 
 
 ## Technolgies Used 
-  1. PHP (8.2)
-  2. Laravel-10
-  3. Blade templating engine
-  4. MySQL database
-  5. Bootstrap 5
+  1. Spring-boot 3.0.0
+  2. Thymeleaf template engine
+  3. Spring data jpa
+  4. Spring mvc
+  5. MySQL database
+  6. Developed in Eclipse EE
   
 ## Screenshots
-### Users
+
 <div style="display: flex;flex-direction: column; grid-gap: 10px;">
     <div style="display: flex; grid-gap: 10px;">
-        <img src="images/1.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="images/2.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+        <img src="src/main/resources/static/images/1.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+        <img src="src/main/resources/static/images/2.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
     </div>
     <div style="display: flex; grid-gap: 10px;">
-        <img src="images/3.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="images/8.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+        <img src="src/main/resources/static/images/3.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+        <img src="src/main/resources/static/images/4.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
     </div>
      <div style="display: flex; grid-gap: 10px;">
-        <img src="images/9.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="images/10.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+        <img src="src/main/resources/static/images/5.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+        <img src="src/main/resources/static/images/6.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
     </div>
 </div>
 <br>
 
 
-
-
-### Admin
-<div style="display: flex;flex-direction: column; grid-gap: 10px;">
-    <div style="display: flex; grid-gap: 10px;">
-        <img src="images/4.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="images/5.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-    </div>
-    <div style="display: flex; grid-gap: 10px;">
-        <img src="images/6.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="images/7.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-    </div>
-</div>
-<br>
 
 ## HOW TO USE?
 
 
- Step-1: **[Install Composer](https://getcomposer.org/)** <br>
- Step-2: **[Install PHP and MySQL OR simply xampp](https://www.apachefriends.org/download.html)**<br>
- Step-3: open XAMPP start Apache server and MySQL database<br>
- Step-4: create database called <b>'ideas'</b> : open browser -> search -> <b>'localhost/phpmyadmin'</b> -> new -> under the database name type <b>'ideas'</b> -> create<br>
+ Step-1: 
+ Step-2: 
+ Step-3: 
+ Step-4: 
 
 Installation
 
