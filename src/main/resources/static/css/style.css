@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root{
+    --grey : rgba(216, 216, 216, 0.76);
+    --light : white;
+    --primary: rgb(107, 87, 124);
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background: var(--grey);
+
+  }
+  
+.card{
+    width: 95vw;
+    max-width: 65rem;
+    border-radius: 15px;
+    font-size: smaller;
+}
+.scroll-box{
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    max-height: 400px;
+}
+.scroll-box::-webkit-scrollbar{
+	height: 0;
+	width: 0;
+}
+.background-flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    min-width: fit-content;
+}
+.background-flexbox .card{
+    min-width: fit-content;
+}
+
+.action-btns button{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+.action-btns button .bx{
+    font-size: 33px;
+}
+.action-btns a{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.action-btns a .bx{
+    font-size: 33px;
+}
+.action-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-flexbox table td .user{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.background-flexbox table td .user img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.update-profile-pic {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.update-profile-pic img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+@media screen and(max-width=600px){
+    .action-btns{
+        flex-direction: column;
+    }
+}
