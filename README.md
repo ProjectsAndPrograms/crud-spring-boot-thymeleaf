@@ -30,7 +30,7 @@
 
 ## HOW TO USE?
 
- Step-1: Fistly you need to set-up your database. Make sure you have MySQL installed in your PC. 
+ <b>Step-1:</b> Fistly you need to set-up your database. Make sure you have MySQL installed in your PC. 
  <br> Database Setup : to setup your database you can use the file database/boot_crud_db.sql. using phpmyadmin = if you are using php myadmin then simpley create a new database with the name of 'chat' and then you can import file database/boot_crud_db.sql from your import tab.
 
  using mysql command line client OR workbench - 
@@ -83,17 +83,17 @@ INSERT INTO `users` (`id`, `dob`, `email`, `name`, `password`, `image`) VALUES
 (21, '2024-01-31', 'mysql@gmail.com', 'SpaceX', '$2a$10$9Oal.rc7J/0qewwsPbFOIuNgjTNGMRE2Zh1nxmY0CRTsiEK1IFRFO', 'adefefb9-b7c6-43d6-a661-c4a1ae42cc53.png');
 ```
 
- Step-2: open your STS IDE import this project as an existing maven project <br>
+ <b>Step-2:</b> open your STS IDE import this project as an existing maven project <br>
         <i>file->import->existing maven project-> choose project folder and hit enter</i><br><br>
         This will open that project in your ide<br><br>
- Step-3: To run this application firstly you need to update your build and update your newly opened maven project.<br>
+ <b>Step-3:</b> To run this application firstly you need to update your build and update your newly opened maven project.<br>
         To do this right click on your project -> build project <br>
         after this in order to update your maven project, again<i> right click on your project-> maven -> update project</i><br><br>
- Step-4: Now you are ready to run this crud-application <br>
+ <b>Step-4:</b> Now you are ready to run this crud-application <br>
 <i>right click on this java class => src/main/java/com/crudapp/SpringBootCrudApplication.java  -> Run As -> Spring boot application</i> <br>
 It will take few seconds to launch the applications. after launching you can browser this url [ [http://localhost:8080](http://localhost:8080)] on your browser to show application  
 <br><br>
-NOTE - if you are configuring this type of project first time, you may face many errors, my suggestion is - to run application - and check the browser with this URL [ [http://localhost:8080](http://localhost:8080)] . If this page is available that means your errors are minor and you are able to run this applicaton 
+<b>NOTE -</b> if you are configuring this type of project first time, you may face many errors, my suggestion is - to run application - and check the browser with this URL [ [http://localhost:8080](http://localhost:8080)] . If this page is available that means your errors are minor and you are able to run this applicaton 
 <br>In my case this is working just fine!
 
 ## Contributing
