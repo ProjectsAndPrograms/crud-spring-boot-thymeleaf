@@ -4,7 +4,7 @@
 ## Features
   1. Image Uplaod
   2. Password encoder
-  3. Pagination links
+  3. Pagination links 
   4. Flash messages
   5. Error pages to handle error code such as 404, 500 etc.
 
